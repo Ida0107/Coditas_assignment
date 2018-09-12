@@ -1,0 +1,74 @@
+header{
+    background-color: rgb(37, 162, 212) ;
+    height: 80px;
+    position: relative;
+    select{
+        position: absolute;
+        top: 20px;
+        left: 400px;
+        width: 200px;
+    }
+    input{
+        position: absolute;
+        top: 20px;
+        left: 700px;
+    }
+    
+}
+table{
+    td{
+        width: 400px;
+    }  
+}
+
+.searchResults{
+
+    width: 800px;
+    position: absolute;
+    left: 250px;
+    
+
+    .user{
+        position: relative;
+        
+        .userDetail{
+            height: auto;
+            border: lightgrey solid 1px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: white;
+
+            h3{
+                position: absolute;
+                left: 220px;
+                top: 30px;
+            }
+            .link{
+                position: absolute;
+                left: 220px;
+                top: 70px;
+            }
+            .score{
+                position: absolute;
+                left: 220px;
+                top: 98px;
+            }
+
+            img{
+                height: 100px;
+                width: 100px;
+                border: grey solid 1px;
+                border-radius: 300px;
+                margin: 20px;
+            }
+            button{
+                border-radius: 10px;
+                position: absolute;
+                left: 550px;
+                top:80px;
+                width: 100px;
+                height: 40px;
+            }
+        }
+    }
+}
