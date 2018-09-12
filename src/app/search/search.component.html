@@ -7,8 +7,8 @@
       </select>
     </div>
     
-      <input [(ngModel)]="data.value" name="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <fa-icon style="position: absolute; left:880px; top: 27px;" [icon]="faSearch"></fa-icon>
+    <input [(ngModel)]="data.value" name="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <fa-icon style="position: absolute; left:880px; top: 27px;" [icon]="faSearch"></fa-icon>
     
     <button style="visibility: hidden" (click) = "search()" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
@@ -23,7 +23,7 @@
   <!-- if users exist -->
   <div *ngIf= "total >0">
     <p style="margin: 10px;">Total Results : {{total}}</p>
-    <div *ngFor = "let user of Users | paginate: { itemsPerPage:5, currentPage: p}" class= "user">
+    <div *ngFor = "let user of Users | paginate: { itemsPerPage:10, currentPage: p}" class= "user">
       <div class="userDetail">
         <img src ="{{user.avatar_url}}">
         <h3><span>{{user.login | titlecase }}</span></h3> 

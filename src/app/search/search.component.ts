@@ -8,6 +8,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
+  
   faSearch = faSearch;
   data : any = {};
   Users: any = null;
